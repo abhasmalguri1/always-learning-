@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int n,m,sum;
+    double x;
+    printf("enter the value of m and n\n");
+    scanf("%d%d",&m,&n);
+    for(int i=m+1;i<n;i++)
+    {sum=0,x=0;
+    int onum, num;
+    num=i;
+    double rem;
+    for(onum=num;onum!=0;x++)
+    onum/=10;
+    for(onum=num;onum!=0;onum/=10)
+    { rem=onum%10;
+    sum=sum+pow(rem,x);
+    }
+    if(sum==num)
+    { printf("%d \n",sum);
+    }
+    }
+    return 0;
+}
